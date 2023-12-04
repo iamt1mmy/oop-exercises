@@ -12,7 +12,7 @@ namespace OopExercises
 
         public string FirstName { get; set; }
 
-        public DateTime DateOfBirth { get; set; }
+        public DateTime DateOfBirth { get; }
 
         public int Age 
         {
@@ -21,5 +21,7 @@ namespace OopExercises
                 return DateTime.Now.Year - DateOfBirth.Year;
             } 
         }
+
+        public Address Address { get; set; }
     }
 }
